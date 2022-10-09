@@ -22,27 +22,6 @@
 </head>
 
 <body>
-
-    <!-- <model-viewer
-        src="https://cdn.glitch.global/f06f1953-3b0c-4dac-958a-9a9630ce2405/Mini%20Fantasy%20Tank.glb?v=1662576806937"
-        ar ar-modes="scene-viewer webxr quick-look" camera-controls
-        poster="https://cdn.glitch.global/f06f1953-3b0c-4dac-958a-9a9630ce2405/poster.webp?v=1662576896598"
-        shadow-intensity="1" auto-rotate>
-        <button class="Hotspot" slot="hotspot-1"
-            data-position="0.08308350090377958m 0.0976833892758448m -0.05492238933211335m"
-            data-normal="0.7889081982726724m 0.008292194278536663m -0.6144551197705272m"
-            data-visibility-attribute="visible">
-            <div class="HotspotAnnotation">Base</div>
-        </button>
-        <div class="progress-bar hide" slot="progress-bar">
-            <div class="update-bar"></div>
-        </div>
-        <button slot="ar-button" id="ar-button">View in your space</button>
-        <div id="ar-prompt">
-            <img src="https://modelviewer.dev/shared-assets/icons/hand.png" />
-        </div>
-    </model-viewer> -->
-
     <!-- Start Top Nav -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
         <div class="container text-light">
@@ -92,13 +71,13 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="#our_products">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.html">Shop</a>
+                            <a class="nav-link" href="#learn">Aprende</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="#quote">Cotiza</a>
                         </li>
                     </ul>
                 </div>
@@ -128,17 +107,31 @@
 
     <!-- Start Banner Hero -->
     <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
+        <!-- <ol class="carousel-indicators">
             <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
             <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
             <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
-        </ol>
+        </ol> -->
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/banner_img_01.jpg" alt="">
+                            <!-- <img class="img-fluid" src="./assets/img/banner_img_01.jpg" alt=""> -->
+                            <div class="row">
+                                <model-viewer
+                                    src="https://cdn.glitch.global/955c0835-1090-4aa0-9584-fa2f73f19800/simple_cube2.gltf?v=1665260972722"
+                                    ar ar-modes="scene-viewer webxr quick-look" camera-controls disable-pan
+                                    poster="./assets/img/banner_img_01.jpg" shadow-intensity="1" auto-rotate>
+                                    <div class="progress-bar hide" slot="progress-bar">
+                                        <div class="update-bar"></div>
+                                    </div>
+                                    <button slot="ar-button" id="ar-button">Ver en tu espacio</button>
+                                    <div id="ar-prompt">
+                                        <img src="https://modelviewer.dev/shared-assets/icons/hand.png" />
+                                    </div>
+                                </model-viewer>
+                            </div>
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
@@ -161,7 +154,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
@@ -200,21 +193,21 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
-        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel"
+        <!-- <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel"
             role="button" data-bs-slide="prev">
             <i class="fas fa-chevron-left"></i>
         </a>
         <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel"
             role="button" data-bs-slide="next">
             <i class="fas fa-chevron-right"></i>
-        </a>
+        </a> -->
     </div>
     <!-- End Banner Hero -->
 
     <!-- Start Nuestros Trabajos -->
-    <section class="container py-5">
+    <section id="our_products" class="container py-5">
         <div class="row text-center pt-3">
             <div class="col-lg-6 m-auto">
                 <h1 class="h1">Conoce nuestros trabajos</h1>
@@ -239,12 +232,12 @@
                                 <div class="row">
                                     <model-viewer
                                         src="https://cdn.glitch.global/f06f1953-3b0c-4dac-958a-9a9630ce2405/Mini%20Fantasy%20Tank.glb?v=1662576806937"
-                                        ar ar-modes="scene-viewer webxr quick-look" camera-controls
+                                        ar ar-modes="scene-viewer webxr quick-look" camera-controls disable-pan
                                         poster="./assets/img/banner_img_01.jpg" shadow-intensity="1" auto-rotate>
                                         <div class="progress-bar hide" slot="progress-bar">
                                             <div class="update-bar"></div>
                                         </div>
-                                        <button slot="ar-button" id="ar-button">View in your space</button>
+                                        <button slot="ar-button" id="ar-button">Ver en tu espacio</button>
                                         <div id="ar-prompt">
                                             <img src="https://modelviewer.dev/shared-assets/icons/hand.png" />
                                         </div>
@@ -271,12 +264,12 @@
                                 <div class="row">
                                     <model-viewer
                                         src="https://cdn.glitch.global/955c0835-1090-4aa0-9584-fa2f73f19800/Chess%20Set.glb?v=1665278724028"
-                                        ar ar-modes="scene-viewer webxr quick-look" camera-controls
+                                        ar ar-modes="scene-viewer webxr quick-look" camera-controls disable-pan
                                         poster="./assets/img/banner_img_01.jpg" shadow-intensity="1" auto-rotate>
                                         <div class="progress-bar hide" slot="progress-bar">
                                             <div class="update-bar"></div>
                                         </div>
-                                        <button slot="ar-button" id="ar-button">View in your space</button>
+                                        <button slot="ar-button" id="ar-button">Ver en tu espacio</button>
                                         <div id="ar-prompt">
                                             <img src="https://modelviewer.dev/shared-assets/icons/hand.png" />
                                         </div>
@@ -303,12 +296,12 @@
                                 <div class="row">
                                     <model-viewer
                                         src="https://cdn.glitch.global/955c0835-1090-4aa0-9584-fa2f73f19800/Concept%20Arm.glb?v=1665278724010"
-                                        ar ar-modes="scene-viewer webxr quick-look" camera-controls
+                                        ar ar-modes="scene-viewer webxr quick-look" camera-controls disable-pan
                                         poster="./assets/img/banner_img_01.jpg" shadow-intensity="1" auto-rotate>
                                         <div class="progress-bar hide" slot="progress-bar">
                                             <div class="update-bar"></div>
                                         </div>
-                                        <button slot="ar-button" id="ar-button">View in your space</button>
+                                        <button slot="ar-button" id="ar-button">Ver en tu espacio</button>
                                         <div id="ar-prompt">
                                             <img src="https://modelviewer.dev/shared-assets/icons/hand.png" />
                                         </div>
@@ -358,7 +351,7 @@
     <!-- End Nuestros Trabajos -->
 
     <!-- Start Video Section -->
-    <section class="bg-light">
+    <section id="learn" class="bg-light">
         <!-- <div style="height: 200px; border-color: black;border-width: 2px;border-style: dotted;"> -->
         <div class="container py-5">
 
@@ -379,15 +372,12 @@
     </section>
     <!-- End Video Section -->
 
-
-
-
-    <!-- Start Featured Product -->
-    <section>
+    <!-- Start Contact Us -->
+    <section id="quote">
         <div class="container py-5">
             <div class="row text-center py-3">
                 <div class="col-lg-6 m-auto">
-                    <h1 class="h1">Featured Product</h1>
+                    <h1 class="h1">Cotiza con Nosotros</h1>
                     <p>
                         Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         Excepteur sint occaecat cupidatat non proident.
@@ -395,86 +385,40 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="card h-100">
-                        <a href="shop-single.html">
-                            <img src="./assets/img/feature_prod_01.jpg" class="card-img-top" alt="...">
-                        </a>
-                        <div class="card-body">
-                            <ul class="list-unstyled d-flex justify-content-between">
-                                <li>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
-                                </li>
-                                <li class="text-muted text-right">$240.00</li>
-                            </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Gym Weight</a>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia
-                                deserunt.
-                            </p>
-                            <p class="text-muted">Reviews (24)</p>
-                        </div>
+                <div class="col-6 col-md-6 mb-6">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Tomas">
                     </div>
                 </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="card h-100">
-                        <a href="shop-single.html">
-                            <img src="./assets/img/feature_prod_02.jpg" class="card-img-top" alt="...">
-                        </a>
-                        <div class="card-body">
-                            <ul class="list-unstyled d-flex justify-content-between">
-                                <li>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
-                                </li>
-                                <li class="text-muted text-right">$480.00</li>
-                            </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Cloud Nike Shoes</a>
-                            <p class="card-text">
-                                Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo
-                                ullamcorper.
-                            </p>
-                            <p class="text-muted">Reviews (48)</p>
-                        </div>
+                <div class="col-6 col-md-6 mb-6">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Contreras">
                     </div>
                 </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="card h-100">
-                        <a href="shop-single.html">
-                            <img src="./assets/img/feature_prod_03.jpg" class="card-img-top" alt="...">
-                        </a>
-                        <div class="card-body">
-                            <ul class="list-unstyled d-flex justify-content-between">
-                                <li>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                </li>
-                                <li class="text-muted text-right">$360.00</li>
-                            </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Summer Addides
-                                Shoes</a>
-                            <p class="card-text">
-                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
-                                scelerisque ipsum lobortis nec.
-                            </p>
-                            <p class="text-muted">Reviews (74)</p>
-                        </div>
+                <div class="col-6 col-md-6 mb-6">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 mb-6">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                        <input type="phone" class="form-control" id="exampleFormControlInput1" placeholder="98989876">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 mb-12">
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
-    <!-- End Featured Product -->
+    <!-- End Contact Us -->
 
 
     <!-- Start Footer -->
