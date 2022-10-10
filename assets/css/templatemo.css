@@ -87,6 +87,9 @@ div {
   background-color: #ff8201 !important;
   border-color: #00aa00 !important;
 }
+.btn-xlg {
+  width: 20vw;
+}
 .pagination .page-link:hover {
   color: #000;
 }
